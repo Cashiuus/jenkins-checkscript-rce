@@ -8,15 +8,13 @@ This little helper script was written because I got tired of copy/pasting comman
 
 The official vulnerabilities for this exploitation:
 
-    * CheckScript RCE in Jenkins - CVE-2019-1003029, CVE-2019-1003030
+* CheckScript RCE in Jenkins - CVE-2019-1003029, CVE-2019-1003030
 
-Features:
+_Features:_
 
-    * Automatically retrieve a current Jenkins-Crumb and use it in command execution requests
-
-    * Run commands with debugging functionality already enabled. In my case, there was no output returned without it.
-
-    * No more copy/pasting into curl!
+* Automatically retrieve a current Jenkins-Crumb and use it in command execution requests
+* Run commands with debugging functionality already enabled. In my case, there was no output returned without it.
+* No more copy/pasting into curl!
 
 
 Keep in mind, this only gets you foothold on the box as the user running the Jenkins service, it doesn't guarantee root. So, you'll still need to privesc once you are on.
